@@ -14,7 +14,7 @@ function setColor(btn, color){
 
 var comm = new Icecomm('MUlSAh1amhJSXKLdBXeUuvFzYMZLPAWM3as4c8JPJwQccMPtK');
 
-comm.connect('custom room', {audio: false});
+comm.connect('custom room', {audio: true});
 
 comm.on('connected', function(peer) {
     var remoteCandidate = peer.getVideo();

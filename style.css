@@ -1,0 +1,55 @@
+body, html {
+    width: 100%;
+    height: 100%;
+ background-color: #444;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+#wrapper {
+ width: 100%;
+ height: 100%;
+ margin: 0 auto;
+ padding: 0;
+ overflow: auto;
+}
+
+#leftcolumn {
+ width: 70%;
+ background-color: red;
+ padding: 0;
+ margin: 0;
+ display: block;
+float: left;
+ height:100%;
+}
+
+#rightcolumn {
+ width: 30%;
+ background-color: blue;
+ display: block;
+ float: left;
+ height: 100%;
+}
+#video {
+    float: left;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 0;
+    padding: 0;
+}
+#description{
+    padding-left: 30px;
+    float: left;
+    clear: left;
+    margin-top: 0;
+    height: 50%;
+    width: 100%;
+    background-color: white;
+}
+
+#remoteVideo {
+    width: 100%;
+    height: 100%;
+}

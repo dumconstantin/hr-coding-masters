@@ -4,6 +4,7 @@ body, html {
  background-color: #444;
  margin-top: 0;
  margin-bottom: 0;
+    overflow: hidden;   
 }
 iframe {
 width: 100%;
@@ -15,7 +16,7 @@ height: 100%;
  height: 100%;
  margin: 0 auto;
  padding: 0;
- overflow: auto;
+ overflow: hidden;
 }
 
 #leftcolumn {
@@ -37,23 +38,26 @@ float: left;
 }
 #video {
     float: left;
-    height: 50%;
+    height: 30%;
     width: 100%;
     background-color: black;
     margin-bottom: 0;
     padding: 0;
 }
 #description{
-    padding-left: 30px;
+    padding: 0 30px;
     float: left;
     clear: left;
     margin-top: 0;
-    height: 50%;
-    width: 100%;
+    height: 70%;
     background-color: white;
+    overflow: scroll;
 }
 
 #remoteVideo {
     width: 100%;
     height: 100%;
 }
+ .button-small {
+            font-size: 85%;
+        }

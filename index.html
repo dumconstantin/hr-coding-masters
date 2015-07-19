@@ -3,7 +3,8 @@
 <head>
 <title>Page Title</title>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <script type="text/javascript" src="http://cdn.icecomm.io/icecomm.js"></script>  
+    <script type="text/javascript" src="http://cdn.icecomm.io/icecomm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
     <script src="functionality.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,6 +17,11 @@
 				
             
             <div id="description">
+                    <div class="pure-g">
+                        <button class="pure-u-1-2" id="time-lasted" class="pure-button"></button>
+                        <button class="pure-button" id="voucher">Reedem voucher</button>
+                    </div>
+       
 					<h1>
 						TASKS LIST:
 					</h1>
@@ -31,24 +37,24 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td>Task nb. 1</td>
-            <td><a id="b1" class="pure-button pure-button-primary" href="#"
-            	onclick="setColor('b1', '#101110')">DONE 1</a>
+            <td>Find bug</td>
+            <td><a id="b1" class="pure-button pure-button-primary button-small" href="#"
+            	onclick="setColor('b1', 'green')">Pending</a>
 			</td>
             </tr>
 
         <tr>
             <td>2</td>
-            <td>Task nb. 2</td>
-            <td><a id="b2" class="pure-button pure-button-primary" href="#"
-            	onclick="setColor('b2', '#111010')">DONE 2</td>
+            <td>Fix found issue</td>
+            <td><a id="b2" class="pure-button pure-button-primary button-small" href="#"
+            	onclick="setColor('b2', 'green')">Pending</td>
             </tr>
 
         <tr>
             <td>3</td>
-            <td>Task nb. 3</td>
-            <td><a id="b3" class="pure-button pure-button-primary" href="#"
-            	onclick="setColor('b3', '#101011')">DONE 3</td>
+            <td>Write documentation</td>
+            <td><a id="b3" class="pure-button pure-button-primary button-small" href="#"
+            	onclick="setColor('b3', 'green')">Pending</td>
             </tr>
     </tbody>
 </table>

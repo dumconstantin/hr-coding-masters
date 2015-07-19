@@ -1,4 +1,7 @@
-<video id="localVideo" autoplay></video>
+
+<div id="video"></div>
+
+
 <script type="text/javascript" src="http://cdn.icecomm.io/icecomm.js"></script>  
 <script>
 var comm = new Icecomm('MUlSAh1amhJSXKLdBXeUuvFzYMZLPAWM3as4c8JPJwQccMPtK');
@@ -6,14 +9,27 @@ var comm = new Icecomm('MUlSAh1amhJSXKLdBXeUuvFzYMZLPAWM3as4c8JPJwQccMPtK');
 comm.connect('custom room', {audio: false});
 
 comm.on('connected', function(peer) {
-   document.body.appendChild(peer.getVideo());
+    var newVideo = peer.getVideo();
+    newVideo.setAttribute('id', 'remoteVideo');
+   document.body.appendChild(newVideo);
 });
 
 comm.on('local', function(peer) {
-  localVideo.src = peer.stream;
+  // localVideo.src = peer.stream;
 });
 
 comm.on('disconnect', function(peer) {
   document.getElementById(peer.ID).remove();
 }); 
 </script>
+
+<style>
+#localvideo {
+    padding: 20px;
+    background: blue;
+}
+    #remoteVideo {
+        padding: 20px;
+        background: pink;
+    }
+</style>
